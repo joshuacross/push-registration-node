@@ -1,0 +1,28 @@
+#
+#            ______
+#          /      /  /\
+#         /      /  /  \
+#        /      /  /    \
+#       /      /  /     /
+#      /      /  /     /
+#     /      /  /     /  /\
+#    /      /  /     /  /  \
+#   /______/  /     /  /    \
+#   _______  /     /  /      \
+#   \      \ \    /  /       /
+#    \      \ \  /  /       /
+#     \      \ \/  /       /
+#      \      \   /       /
+#       \      \  \      /
+#        \______\  \____/
+#
+#           ForgeRock®
+#           BackStage
+#
+#
+#  https://backstage.forgerock.com/
+#  Copyright (c) 2013-2019 ForgeRock BackStage All rights reserved.
+#
+#
+
+com.forgerock.backstage.ssoextensions.auth.push.PushRegistrationNodePlugin

@@ -26,7 +26,6 @@
 
 package com.forgerock.backstage.ssoextensions.auth.push;
 
-import com.forgerock.backstage.ssoextensions.commons.NodeHelper;
 import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
 import com.sun.identity.idm.AMIdentity;

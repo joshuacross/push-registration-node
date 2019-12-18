@@ -15,7 +15,13 @@
 -->
 <b>Push Notification Registration Node</b>
 <br/>
-An authentication node which allows registration of a mobile device for use with the Push Authentication node.
+An authentication node which allows registration of a mobile device for use with the Push Authentication node. When the 
+node is first visited, the user is displayed with a QR code to be scanned by the device they wish to register. The node 
+will send a push notification to the device and await a response. Upon receiving a response, if the configuration has 
+been set to generate recovery codes they will be placed into the transient state for use with a subsequent node, a 
+device profile will be saved to the user's entry in the identity store, and the node will continue to the 'Success' 
+outcome. In the event that the user doesn't respond to the push notification within the limit (defined in the AM 
+management console) then the 'expired' outcome will be selected.
 <br/>
 <br/>
 <b>Installation</b>
@@ -25,8 +31,7 @@ Copy the .jar file from the ../target directory into the ../web-container/webapp
 <br/>
 <b>Usage</b>
 <br/>
-The node should be added to an authentication tree and assumes username is available in shared state, e.g., place the registration node after a Username Collector node. If required, the registration node can be followed with a push sender and push verification node as confirmation.
-Note: this node does not support emergency codes or user skippable MFA - you must ensure "Remove Skip Option" is enabled on any Push Sender nodes.
+The node should be added to an authentication tree and assumes username is available in shared state, e.g. place the registration node after a Username Collector node. If required, the registration node can be followed with a push sender and push verification node as confirmation.
 <br/>
 <br/>
 <b>To Build</b>
